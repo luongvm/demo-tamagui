@@ -6,6 +6,7 @@ import { TamaguiProvider, Theme } from "tamagui";
 import config from "../tamagui.config";
 import { ToastProvider } from "@tamagui/toast";
 import { SafeToastViewport } from "../components/ToastContainer";
+import { useColorScheme } from "react-native";
 export {
   // Catch any errors thrown by the Layout component.
   ErrorBoundary,
@@ -44,9 +45,11 @@ export default function RootLayout() {
 }
 
 function RootLayoutNav() {
+  const colorScheme = useColorScheme();
+
   return (
     <TamaguiProvider config={config}>
-      <Theme name={"light_blue"}>
+      <Theme name={colorScheme === "dark" ? "dark_blue" : "light_red"}>
         <ToastProvider burntOptions={{ from: "bottom" }}>
           <Stack>
             <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
