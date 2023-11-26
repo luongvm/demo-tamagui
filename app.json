@@ -16,7 +16,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.luongvu.demo-tamagui"
     },
     "android": {
       "adaptiveIcon": {

@@ -2984,6 +2984,23 @@
   resolved "https://registry.yarnpkg.com/@tamagui/timer/-/timer-1.79.1.tgz#0db246b3357244c2b9bf6471da2d1a55641ebb76"
   integrity sha512-MrbdHICUow6jDRM/7Q4IQegd66cQ+d84g2xnsVNHFESg53rb50O3VHDg8vwP+q8zDS9jjwKDkNKUgNacX5IB+Q==
 
+"@tamagui/toast@^1.79.1":
+  version "1.79.1"
+  resolved "https://registry.yarnpkg.com/@tamagui/toast/-/toast-1.79.1.tgz#bd800962ff5678733b6503bbfd64c85852266d26"
+  integrity sha512-kikLD278UGUQ7rd8MFCNiucYQOPyadC95hcBq7Hjl8yiq7XrGldMffRvC4/a1xa4BbExG2XI7KZoywERUN02dQ==
+  dependencies:
+    "@tamagui/animate-presence" "1.79.1"
+    "@tamagui/compose-refs" "1.79.1"
+    "@tamagui/core" "1.79.1"
+    "@tamagui/create-context" "1.79.1"
+    "@tamagui/dismissable" "1.79.1"
+    "@tamagui/polyfill-dev" "1.79.1"
+    "@tamagui/portal" "1.79.1"
+    "@tamagui/stacks" "1.79.1"
+    "@tamagui/text" "1.79.1"
+    "@tamagui/use-controllable-state" "1.79.1"
+    "@tamagui/visually-hidden" "1.79.1"
+
 "@tamagui/toggle-group@1.79.1":
   version "1.79.1"
   resolved "https://registry.yarnpkg.com/@tamagui/toggle-group/-/toggle-group-1.79.1.tgz#870ce8206872639589ceb015f90a51600d976f39"
@@ -3839,6 +3856,14 @@ builtins@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/builtins/-/builtins-1.0.3.tgz#cb94faeb61c8696451db36534e1422f94f0aee88"
   integrity sha512-uYBjakWipfaO/bXI7E8rq6kpwHRZK5cNYrUv2OzZSI/FvmdMyXJ2tG9dKcjEC5YHmHpUAwsargWIZNWdxb/bnQ==
+
+burnt@^0.12.1:
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/burnt/-/burnt-0.12.1.tgz#48d9db0115dc9016ba0420db2b68c943bcbe84c8"
+  integrity sha512-a5EQvG8CR1JDmOyY9aiUORnJ39wpmZMMva5qbCTXadtNJAjLDZTvrmp7cvYB9i+Jfe1wVhvCCFfEios7M9/88Q==
+  dependencies:
+    sf-symbols-typescript "^1.0.0"
+    sonner "^0.3.5"
 
 bytes@3.0.0:
   version "3.0.0"
@@ -7684,10 +7709,10 @@ react-native-gesture-handler@~2.12.0:
     lodash "^4.17.21"
     prop-types "^15.7.2"
 
-react-native-safe-area-context@4.6.3:
-  version "4.6.3"
-  resolved "https://registry.yarnpkg.com/react-native-safe-area-context/-/react-native-safe-area-context-4.6.3.tgz#f06cfea05b1c4b018aa9758667a109f619c62b55"
-  integrity sha512-3CeZM9HFXkuqiU9HqhOQp1yxhXw6q99axPWrT+VJkITd67gnPSU03+U27Xk2/cr9XrLUnakM07kj7H0hdPnFiQ==
+react-native-safe-area-context@^4.7.4:
+  version "4.7.4"
+  resolved "https://registry.yarnpkg.com/react-native-safe-area-context/-/react-native-safe-area-context-4.7.4.tgz#3dd8438971e70043d76f2428ede75b8a9639265e"
+  integrity sha512-3LR3DCq9pdzlbq6vsHGWBFehXAKDh2Ljug6jWhLWs1QFuJHM6AS2+mH2JfKlB2LqiSFZOBcZfHQFz0sGaA3uqg==
 
 react-native-screens@~3.22.0:
   version "3.22.1"
@@ -8187,6 +8212,11 @@ setprototypeof@1.2.0:
   resolved "https://registry.yarnpkg.com/setprototypeof/-/setprototypeof-1.2.0.tgz#66c9a24a73f9fc28cbe66b09fed3d33dcaf1b424"
   integrity sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==
 
+sf-symbols-typescript@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/sf-symbols-typescript/-/sf-symbols-typescript-1.0.0.tgz#94e9210bf27e7583f9749a0d07bd4f4937ea488f"
+  integrity sha512-DkS7q3nN68dEMb4E18HFPDAvyrjDZK9YAQQF2QxeFu9gp2xRDXFMF8qLJ1EmQ/qeEGQmop4lmMM1WtYJTIcCMw==
+
 shallow-clone@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/shallow-clone/-/shallow-clone-3.0.1.tgz#8f2981ad92531f55035b01fb230769a40e02efa3"
@@ -8286,6 +8316,11 @@ slugify@^1.3.4:
   version "1.6.6"
   resolved "https://registry.yarnpkg.com/slugify/-/slugify-1.6.6.tgz#2d4ac0eacb47add6af9e04d3be79319cbcc7924b"
   integrity sha512-h+z7HKHYXj6wJU+AnS/+IH8Uh9fdcX1Lrhg1/VMdf9PwoBQXFcXiAdsy2tSK0P6gKwJLXp02r90ahUCqHk9rrw==
+
+sonner@^0.3.5:
+  version "0.3.5"
+  resolved "https://registry.yarnpkg.com/sonner/-/sonner-0.3.5.tgz#5ef175732cb7b637c6460620ab01a0fba0e6a36b"
+  integrity sha512-yIwaQ4dftMvFApuruto2t7wGyyaPRpj5qYBWYJIz4Z7uGcVn0IfqI/hWN0JyJN4izNbZFuCYZISf3fOGnvSlNQ==
 
 sort-keys@^2.0.0:
   version "2.0.0"

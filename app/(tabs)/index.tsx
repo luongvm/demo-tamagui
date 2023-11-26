@@ -1,31 +1,25 @@
-import { StyleSheet } from 'react-native';
-
-import EditScreenInfo from '../../components/EditScreenInfo';
-
-import { Text, View } from 'tamagui'
+import { useToastController } from "@tamagui/toast";
+import { useCallback } from "react";
+import { Button, Text, View } from "tamagui";
 export default function TabOneScreen() {
+  const toast = useToastController();
+  const showToast = useCallback(() => {
+    toast.show("OK", {
+      message: "Done",
+      native: true,
+      burntOptions: {
+        from: "bottom",
+      },
+    });
+  }, []);
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Tab One - Hello</Text>
-      <View style={styles.separator} />
-      <EditScreenInfo path="app/(tabs)/index.tsx" />
+    <View>
+      <Text>Tab One - Hello</Text>
+      <View />
+
+      <Button theme={"active"} onPress={showToast}>
+        Plain
+      </Button>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
-  },
-});
