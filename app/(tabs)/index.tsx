@@ -1,6 +1,6 @@
 import { useToastController } from "@tamagui/toast";
 import { useCallback } from "react";
-import { Button, Text, View } from "tamagui";
+import { Button, Input, Text, View } from "tamagui";
 export default function TabOneScreen() {
   const toast = useToastController();
   const showToast = useCallback(() => {
@@ -13,12 +13,13 @@ export default function TabOneScreen() {
     });
   }, []);
   return (
-    <View>
-      <Text>Tab One - Hello</Text>
-      <View />
+    <View className=" bg-gray-400 flex-1 px-2 py-4">
+      <Text className="px-2 py-2 text-xl">Input Test</Text>
+      <Input placeholder="Type anything" />
+      <View className="flex-1" />
 
-      <Button theme={"active"} onPress={showToast}>
-        Plain
+      <Button className="px-2 mx-4" theme={"active"} onPress={showToast}>
+        Display Toast
       </Button>
     </View>
   );
